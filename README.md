@@ -7,7 +7,7 @@ Golang Iris contribution repository
 
 ## Middlewares
 
-[Jose middleware](jose)
+[Jose middleware](middleware/jose)
 
 ## Contributors
 
