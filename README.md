@@ -11,4 +11,5 @@ Golang Iris contribution repository
 
 ## Contributors
 
-* Mickaël Garnier (middleware/jose)
+* Alexandre Richonnier
+* Mickaël Garnier
