@@ -56,7 +56,7 @@ func TestBasicJose(t *testing.T) {
 		Contains("Iauthenticated").Contains("with Jose")
 }
 
-func ExampleUsingJose(t *testing.T) {
+func Example() {
 	var (
 		privateKey, _    = rsa.GenerateKey(rand.Reader, 2048)
 		api              = iris.New()
@@ -71,19 +71,17 @@ func ExampleUsingJose(t *testing.T) {
 		claimString := myJoseMiddleware.Get(ctx)
 
 		response := Response{Text: "Iauthenticated " + string(claimString)}
-		log.Printf("claim string : %s", claimString)
 		claim := Claim{}
 		json.Unmarshal(claimString, &claim)
-		fmt.Println("claim : %s", claim.Name)
-		// Output:
-		// claim :  with Jose
+		fmt.Println("claim :", claim.Name)
+
 		ctx.JSON(iris.StatusOK, response)
 	}
 
 	// assign middleware and callback
 	api.Get("/secured/ping", myJoseMiddleware.Serve, securedPingHandler)
 
-	e := api.Tester(t)
+	e := api.Tester(nil)
 
 	log.Printf("Test no 2 : should be authorized")
 
@@ -93,4 +91,6 @@ func ExampleUsingJose(t *testing.T) {
 	e.GET("/secured/ping").WithHeader("Authorization", "Bearer "+token).
 		Expect().Status(iris.StatusOK).Body().
 		Contains("Iauthenticated").Contains("with Jose")
+	// Output:
+	// claim :  with Jose
 }
