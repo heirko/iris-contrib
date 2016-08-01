@@ -83,8 +83,6 @@ func Example() {
 
 	e := api.Tester(nil)
 
-	log.Printf("Test no 2 : should be authorized")
-
 	// Create a new token
 	claim := Claim{Name: " with Jose"}
 	token := myJoseMiddleware.NewTokenWithClaim(claim)
