@@ -1,5 +1,7 @@
 # Jose Middleware for Iris web framework
 
+[![GoDoc](https://godoc.org/github.com/kardianos/govendor?status.svg)](https://godoc.org/github.com/Heirko/iris-contrib/middleware/jose)
+
 Golang jose repository
 
 ## Middleware information
