@@ -4,7 +4,7 @@ Golang jose repository
 
 ## Middleware information
 
-This middleware has been converted to work with iris[*](https://github.com/kataras/iris)
+This middleware has been converted to work with [iris](https://github.com/kataras/iris)
 
 
 ## Description
