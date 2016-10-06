@@ -1,6 +1,7 @@
 # iris-contrib
 
-[![Build Status](https://travis-ci.org/Heirko/iris-contrib.svg?branch=master)](https://travis-ci.org/Heirko/iris-contrib)
+[![Build Status](https://travis-ci.org/heirko/iris-contrib.svg?branch=master)](https://travis-ci.org/heirko/iris-contrib)
+[![Build Status](https://travis-ci.org/heirko/iris-contrib.svg?branch=master)](https://travis-ci.org/heirko/iris-contrib) [![GoDoc](https://godoc.org/github.com/heirko/iris-contrib?status.png)](https://godoc.org/github.com/heirko/iris-contrib) [![Go Report Card](https://goreportcard.com/badge/github.com/heirko/iris-contrib)](https://goreportcard.com/report/github.com/heirko/iris-contrib)
 
 
 Golang Iris contribution repository
