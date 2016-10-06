@@ -16,3 +16,4 @@ import:
 - package: github.com/spf13/viper
 - package: gopkg.in/square/go-jose.v1
   version: ^1.0.3
+- package: .
