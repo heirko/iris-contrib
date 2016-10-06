@@ -12,7 +12,7 @@ Golang Iris contribution repository
 ## Configuration Samples
 
 
-*  Integrate [Logrus](https://github.com/Sirupsen/logrus)  with [Iris](https://github.com/kataras/iris) and [spf13/Viper](https://github.com/spf13/viper") [logrus-logger](middleware/logrus-logger/example)
+*  [logrus-logger example](middleware/logrus-logger/example) : Integrate [Logrus](https://github.com/Sirupsen/logrus)  with [Iris](https://github.com/kataras/iris) and [spf13/Viper](https://github.com/spf13/viper) 
 
 
 ## Contributors
